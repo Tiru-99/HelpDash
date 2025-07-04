@@ -1,0 +1,40 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Environment files
+.env
+.env.*
+
+# Virtual environment
+env/
+venv/
+.venv/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor-specific
+.vscode/
+.idea/
+
+# Pytest & test cache
+.pytest_cache/
+.coverage
+
+# Log files
+*.log
+
+# MyPy
+.mypy_cache/
+
+# Build files
+build/
+dist/
+*.egg-info/
+
+# CrewAI memory dir (if using local storage)
+crew_memory/

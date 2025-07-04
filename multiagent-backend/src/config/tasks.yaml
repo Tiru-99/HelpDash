@@ -1,0 +1,7 @@
+support_query_task:
+  description: "Handle client support queries, retrieve information, and provide assistance"
+  expected_output: "Comprehensive response to the user's support query with relevant data and next steps"
+  
+dashboard_analytics_task:
+  description: "Provide business analytics, metrics, and insights for dashboard reporting"
+  expected_output: "Detailed analytics report with metrics, trends, and business insights"
