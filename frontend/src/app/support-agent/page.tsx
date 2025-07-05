@@ -59,6 +59,7 @@ export default function SupportAgentPage() {
         setMessages((prev) => [...prev, agentMessage])
       }
     } catch (error) {
+      console.log("error" , error);
       // Mock response for demo
       const mockResponse: Message = {
         id: (Date.now() + 1).toString(),

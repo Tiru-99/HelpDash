@@ -60,6 +60,7 @@ export default function DashboardAgentPage() {
       }
     } catch (error) {
       // Mock response for demo
+      console.log("error" , error);
       const mockResponse: Message = {
         id: (Date.now() + 1).toString(),
         type: "agent",
