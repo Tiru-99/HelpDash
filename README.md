@@ -1,8 +1,10 @@
 
-# MultiAgent Backend
+# HelpDash Multiagent Service
 
 MultiAgent Backend is a FastAPI‑based service that exposes two AI agents—**Support Agent** and **Dashboard Agent**—through a versioned REST API.  
-It is production‑ready, configured for Gunicorn + Uvicorn behind NGINX, and secured with HTTPS via Let’s Encrypt.
+It integrates **CrewAI** to coordinate multi-agent workflows, uses **MongoDB Atlas** for structured data persistence, and leverages the **Gemini API** for LLM-powered prompt processing.  
+This backend is production‑ready, configured for **Gunicorn + Uvicorn** behind **NGINX**, and secured with **HTTPS via Certbot**.
+
 
 ---
 
