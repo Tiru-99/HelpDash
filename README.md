@@ -1,7 +1,3 @@
----
-title: MultiAgent Backend
-description: Production‑ready FastAPI service that powers Support and Dashboard AI agents
----
 
 # MultiAgent Backend
 
