@@ -1,5 +1,6 @@
 from fastapi import FastAPI , APIRouter
-from routes import support_agent , dashboard_agent
+from src.routes.support_agent import router as support_router
+from src.routes.dashboard_agent import router as dashboard_router
 from dotenv import load_dotenv
 load_dotenv()   
 
@@ -14,8 +15,8 @@ async def health_check():
     return {"message " : " Health : Ok !!"}
 
 #Include the routers 
-api_v1.include_router(support_agent.router , prefix = "/support-agent", tags = ["Support Agent"])
-api_v1.include_router(dashboard_agent.router , prefix = "/dashboard-agent" , tags = ["Dashboard Agent"])
+api_v1.include_router(support_router , prefix = "/support-agent", tags = ["Support Agent"])
+api_v1.include_router(dashboard_router , prefix = "/dashboard-agent" , tags = ["Dashboard Agent"])
 
 #Include the versioned router 
 app.include_router(api_v1)
