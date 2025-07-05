@@ -75,10 +75,10 @@ export default function DashboardAgentPage() {
   }
 
   const quickActions = [
-    { label: "Show user analytics", icon: "📊" },
-    { label: "Revenue report", icon: "💰" },
-    { label: "Course performance", icon: "📚" },
-    { label: "Support metrics", icon: "🎯" },
+    { label: "Give the most enrolled classes", icon: "📊" },
+    { label: "Return Total Revenue", icon: "💰" },
+    { label: "What are the course completion rates", icon: "📚" },
+    { label: "Are there any client birthday reminders", icon: "🎯" },
   ]
 
   return (
