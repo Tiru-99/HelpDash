@@ -5,7 +5,6 @@ from pydantic import BaseModel, Field
 from db.mongo import db
 
 sessions_collection = db["classes"]
-print("The sessions collections are " , sessions_collection)
 
 # Input Classes  
 
