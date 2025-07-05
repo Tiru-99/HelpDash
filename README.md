@@ -7,9 +7,9 @@ It is production‑ready, configured for Gunicorn + Uvicorn behind NGINX, an
 ---
 
 ## Features
-
+- Deployed on AWS EC2 with nginx 
 - API versioning under `/api/v1`
-- Two independent AI agents  
+- Two independent AI agents using CREW AI with Gemini API 
   • Support Agent for external client queries  
   • Dashboard Agent for internal analytics  
 - Health‑check endpoint at `/health`
@@ -17,7 +17,6 @@ It is production‑ready, configured for Gunicorn + Uvicorn behind NGINX, an
 - MongoDB Atlas integration
 - Environment‑variable support via `dotenv`
 - Deployment‑ready with Gunicorn workers and NGINX reverse proxy
-- Optional GitHub Actions workflow for CI/CD
 
 ---
 
@@ -42,3 +41,44 @@ multiagent-backend/
 ├─ .env                  # Environment variables (git‑ignored)
 ├─ requirements.txt      # Python dependencies
 └─ README.mdx            # Documentation
+```
+## Setup Instructions
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/your-username/multiagent-backend.git
+cd multiagent-backend
+```
+### 2. Setup the virtual enviornment 
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+### 3. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+### 4. Create your .env file
+```bash
+touch .env
+```
+### 5. Add the following env 
+```bash
+#Backend env 
+MONGO_CONNECTION_URL = your url
+MONGO_DB_NAME= your db name
+MODEL= your model 
+LITELLM_PROVIDER= your provider
+GEMINI_API_KEY= your api key
+ 
+#frontend env
+NEXT_PUBLIC_API_URL= your api url (localhost one)
+
+```
+### 6. Run the application locally 
+```bash
+PYTHONPATH=src uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+```
+
+
+
