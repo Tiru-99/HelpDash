@@ -11,7 +11,8 @@ This backend is production‑ready, configured for **Gunicorn + Uvicorn** be
 ## Features
 - Deployed on AWS EC2 with nginx 
 - API versioning under `/api/v1`
-- Two independent AI agents using CREW AI with Gemini API 
+- Two independent AI agents using CREW AI with Gemini API
+  
   • Support Agent for external client queries  
   • Dashboard Agent for internal analytics  
 - Health‑check endpoint at `/health`
