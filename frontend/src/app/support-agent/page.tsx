@@ -156,7 +156,7 @@ export default function SupportAgentPage() {
                       style={{ animationDelay: "0.2s" }}
                     ></div>
                   </div>
-                  <span className="text-sm text-gray-500">Agent is typing...</span>
+                  <span className="text-sm text-gray-500">Our AI agent is processing your request. This may take a moment, please wait patiently...</span>
                 </div>
               </div>
             </div>
