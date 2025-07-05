@@ -80,5 +80,26 @@ NEXT_PUBLIC_API_URL= your api url (localhost one)
 PYTHONPATH=src uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 ```
 
+# License
+
+This project is licensed under the **MIT License**.  
+You are free to use, modify, and distribute this software with proper attribution.
+
+See the [LICENSE](./LICENSE) file for more details.
+
+---
+
+## Support
+
+For issues, bugs, or feature requests, please open an issue on the [GitHub Issues](https://github.com/Tiru-99/HelpDash/issues) page.
+
+---
+
+## Author
+
+**Aayush Tirmanwar**  
+_Computer Science Student | Full Stack Developer_  
+Built with purpose, speed, and flexibility in mind.
+
 
 
