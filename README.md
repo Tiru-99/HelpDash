@@ -25,7 +25,7 @@ This backend is production‑ready, configured for **Gunicorn + Uvicorn** be
 ## 📄 Documentation & Sample Prompts
 
 Access the full API documentation and sample prompt usage here:  
-🔗 **[https://documenter.getpostman.com/view/28016254/2sB34co2ZD]**  
+🔗 **https://documenter.getpostman.com/view/28016254/2sB34co2ZD**  
 
 ---
 
@@ -86,8 +86,6 @@ PYTHONPATH=src uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 
 This project is licensed under the **MIT License**.  
 You are free to use, modify, and distribute this software with proper attribution.
-
-See the [LICENSE](./LICENSE) file for more details.
 
 ---
 
